@@ -1,0 +1,131 @@
+/* Write your CSS here */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+}
+
+.app-container {
+  padding: 25px;
+  min-height: 100vh;
+}
+
+@media (min-width: 768px) {
+  .app-container {
+    padding: 150px;
+  }
+}
+
+.add-comment-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .add-comment-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+.heading {
+  font-family: Roboto;
+  font-size: 50px;
+}
+
+.comments-image {
+  height: 250px;
+  width: auto;
+  order: 0;
+}
+
+@media (min-width: 768px) {
+  .comments-image {
+    height: 350px;
+    order: 1;
+  }
+}
+
+.comment-input-container {
+  order: 1;
+}
+
+@media (min-width: 768px) {
+  .comment-input-container {
+    order: 0;
+    width: 500px;
+    display: block;
+  }
+}
+
+.topic {
+  font-family: Roboto;
+  font-size: 20px;
+  font-weight: 600;
+  color: #475569;
+}
+
+@media (min-width: 768px) {
+  .topic {
+    font-size: 18px;
+  }
+}
+
+.username {
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 8px;
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #cbd2d9;
+}
+
+@media (min-width: 768px) {
+  .username {
+    padding: 12px;
+  }
+}
+
+.comment {
+  border-radius: 5px;
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 100%;
+  height: 150px;
+  outline: none;
+  border: 1px solid #cbd2d9;
+}
+
+@media (min-width: 768px) {
+  .comment {
+    width: 100%;
+    padding: 12px;
+  }
+}
+
+.add-comment-button {
+  font-family: Roboto;
+  padding: 8px 12px;
+  border-radius: 5px;
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+}
+
+hr {
+  width: 100%;
+}
+
+.comments-count {
+  font-family: Roboto;
+  padding: 5px 8px;
+  border-radius: 5px;
+  background-color: #0284c7;
+  color: #ffffff;
+  border: none;
+}
